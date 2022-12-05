@@ -11,7 +11,7 @@ const app = express();
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
-
+//  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
 app.use("/laundry", laundryRoutes);
 app.use("/user", userRoutes);
 
