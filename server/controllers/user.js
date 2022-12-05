@@ -5,8 +5,9 @@ import User from "../models/user.js";
 import mailgun from "mailgun-js";
 import crypto from "crypto";
 
-const DOMAIN = "sandbox082f4cac206c461bad57fef0b9b5418d.mailgun.org";
-const api_key = "9b840c5aa5cde758a0449254b06e1f4f-bdb2c8b4-69d51a6d";
+
+const DOMAIN = "sandboxaa9d473a429b4afb9156164e8e15c987.mailgun.org";
+const api_key = "94d2611219cd1fc82d6b551e939477a5-bdb2c8b4-3e509a5d";
 const mg = mailgun({ apiKey: api_key, domain: DOMAIN });
 
 export const signin = async (req, res) => {
@@ -120,7 +121,7 @@ export const recoverPasswordEmail = async (req, res) => {
     // await sendEmail(user.email, "Password Reset", url);
 
     const dataMail = {
-      from: "pratikprog@gmail.com",
+      from: "pranay2017raj@gmail.com",
       to: `${user.email}`,
       subject: "Recover Password",
       text: ` ${user.email}, "Password Reset", ${url}`,

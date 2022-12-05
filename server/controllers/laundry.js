@@ -6,45 +6,11 @@ import User from "../models/user.js";
 import mailgun from "mailgun-js";
 import nodemalier from "nodemailer";
 const router = express.Router();
-// sgMail.setApiKey(
-//   "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"
-// );
-// let transporter = nodemalier.createTransport({
-//   host: "smtp.mailtrap.io",
-//   port: 2525,
-//   auth: {
-//     user: "7dc4076e0b30c1",
-//     pass: "6e78b7259d267c",
-//   },
-//   tls: {
-//     rejectUnauthorized: false,
-//   },
-// });
-// let mailOptions = {
-//   from: "pratikprog@gmail.com",
-//   to: "pratikkumar753@gmail.com",
-//   subject: "hiii",
-//   text: "hiii",
-// };
-// transporter.sendMail(mailOptions, function (err, success) {
-//   if (err) console.log(err);
-//   else {
-//     console.log("email send!");
-//   }
-// });
-// const msg = {
-//   to: "pratikkumar753@gmail.com",
-//   from: "pratikprog@gmail.com",
-//   subject: "hii uiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiipratik",
-//   text: "the iiiiiiiiiiiiiiiiiiiiii iiiiiiiiiiiiiiiiiy yigyftu  kytdtyfkyt fky yfufutf fttext",
-// };
-// sgMail.send(msg, function (err, info) {
-//   if (err) console.log("Email Error");
-//   console.log(err, "email Success");
-// });
 
-const DOMAIN = "sandbox082f4cac206c461bad57fef0b9b5418d.mailgun.org";
-const api_key = "9b840c5aa5cde758a0449254b06e1f4f-bdb2c8b4-69d51a6d";
+
+
+const DOMAIN = "sandboxaa9d473a429b4afb9156164e8e15c987.mailgun.org";
+const api_key = "94d2611219cd1fc82d6b551e939477a5-bdb2c8b4-3e509a5d";
 const mg = mailgun({ apiKey: api_key, domain: DOMAIN });
 
 export const getLaundry = async (req, res) => {
@@ -109,7 +75,7 @@ export const changeStatus = async (req, res) => {
   console.log(updateData);
   console.log(userData);
   const dataMail = {
-    from: "pratikprog@gmail.com",
+    from: "pranay2017raj@gmail.com",
     to: `${userData.email}`,
     subject: "Laundry Status",
     text: `
