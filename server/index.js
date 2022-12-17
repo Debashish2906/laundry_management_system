@@ -16,7 +16,7 @@ app.use("/laundry", laundryRoutes);
 app.use("/user", userRoutes);
 
 const CONNECTION_URL =
-  "mongodb+srv://pranayraj:manager@cluster0.6yozuk6.mongodb.net/laundry";
+  "mongodb+srv://Debashish:manager@cluster0.brhww5f.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 mongoose
